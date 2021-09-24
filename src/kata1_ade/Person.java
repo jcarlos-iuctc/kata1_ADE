@@ -1,8 +1,6 @@
 package kata1_ade;
 
-
 import java.util.Calendar;
-import java.util.Date;
 import java.util.GregorianCalendar;
 
 public class Person {
@@ -23,9 +21,10 @@ public class Person {
         return millisecondsToYears(now.getTimeInMillis() - birthdate.getTimeInMillis());
     }
 
-    private int millisecondsToYears(long l) {
+    private int millisecondsToYears(long milliseconds) {
+        
         long MillisecondsPerYear = (long) (365.25*24*60*60*1000);        
-        return (int) (l/MillisecondsPerYear);
+        return (int) (milliseconds/MillisecondsPerYear);
     }
     
     

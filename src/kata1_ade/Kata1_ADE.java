@@ -10,9 +10,7 @@ public class Kata1_ADE {
         birthdate.set(1980, 1, 1);
         
         Person person = new Person("Antonio", birthdate);       
-        System.out.println(person.getName() + " tiene " + person.getAge() + "." );
-        
-        
+        System.out.println(person.getName() + " tiene " + person.getAge() + "." );                
     }
     
 }
